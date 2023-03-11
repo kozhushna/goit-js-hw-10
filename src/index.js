@@ -30,6 +30,7 @@ function onSearch(e) {
 
 function onFetchError(error) {
   Notiflix.Notify.failure('Oops, there is no country with that name');
+  country.clearAll();
 }
 
 function onFetchSuccess(countries) {
